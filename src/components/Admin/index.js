@@ -2,6 +2,7 @@ import React, {Component} from 'react'
 
 class Admin extends Component{
   render(){
+    // console.log(this.props.addMed);
     return(
         <section className="admin">
           <h1>Admin</h1>
@@ -13,6 +14,7 @@ class Admin extends Component{
             <input type="text" id="brand" name="brand"/>
             <label htmlFor="mg">Mg</label>
             <input type="text" id="mg" name="mg"/>
+            <button> add medicine</button>
           </form>
         </section>
     )

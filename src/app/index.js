@@ -5,7 +5,7 @@ import Header from '../components/Header/'
 import Admin from '../components/Admin/'
 
 const prettyTime = (sec) =>{
-  return Math.floor(sec/60) + ':' + ('0' + sec % 60).slice(-2)
+  Math.floor(sec/60) + ':' + ('0' + sec % 60).slice(-2)
 }
 
 class App extends Component {
@@ -25,8 +25,7 @@ class App extends Component {
         }
       ]
     }
-  }
-
+  } 
   render() {
     return (
       <div className="App">
