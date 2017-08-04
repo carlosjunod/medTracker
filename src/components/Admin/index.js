@@ -14,7 +14,7 @@ class Admin extends Component{
             <input type="text" id="brand" name="brand"/>
             <label htmlFor="mg">Mg</label>
             <input type="text" id="mg" name="mg"/>
-            <button> add medicine</button>
+            <button> add medicine </button>
           </form>
         </section>
     )
