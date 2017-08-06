@@ -1,0 +1,16 @@
+{
+  "medicines": [
+  	{
+  		"name": "Ibuprofen",
+  		"brand": "Advil",
+  		"mg": "600",
+  		"alarm": "2pm"
+  	},
+  	{
+  		"name": "another",
+  		"brand": "lalla",
+  		"mg": "600",
+  		"alarm": "3pm"
+  	}
+  ]
+}
