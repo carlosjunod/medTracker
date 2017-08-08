@@ -1,20 +1,34 @@
-const medicinesData = require('../data/medicines.json')
+const medsData = {
+  'meds': [
+  	{
+  		'name': 'Ibuprofen',
+  		'brand': 'Advil',
+  		'mg': '600',
+  		'alarm': '2pm',
+  	},
+  	{
+  		'name': 'another',
+  		'brand': 'lalla',
+  		'mg': '600',
+  		'alarm': '3pm',
+  	},
+  ],
+}
 
 // medicine redducer
-// Original state :  medicinesData.medicines
-
-// const initialState = {}
-const initialState = medicinesData.medicines
-const medicineReducer = ( state = initialState, action ) => {
+const medicineReducer = ( state = medsData.meds, action ) => {
   switch (action.type) {
   case 'GET_MEDS':
     return Object.assign({}, state, {
-      medicines: initialState,
+      meds: medsData.meds,
     })
   case 'ADD_MED':
-    return Object.assign({}, state, {
-    // do something
-    })
+    return [...state, {
+      'name': action.name,
+      'brand': action.brand,
+      'mg': action.mg,
+      'alarm': action.alarm,
+    }]
   default:
     return state
   }

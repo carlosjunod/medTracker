@@ -1,19 +1,16 @@
-import React, {Component} from 'react'
+import React from 'react'
 
-const MedicneList = ({addMed}) => (
+const MedicneList = ({meds}) => (
   <section className="medicine-list">
     <section className="medicnes">
       <h2>My medicines</h2>
       <ul>
-        <button onClick={ addMed } className="add_btn">Add Med</button>
-        {/* <li className="med">
-          <ul>
-            <li>Medicine title</li>
-            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
-            <li>9:30 AM</li>
-          </ul>
-        </li> */}
-
+        {console.log('HERE MEDICINES 💊->', meds)}
+        {
+          meds.map( (med, i) =>
+            <li key={i}> {med.name} </li>
+          )
+        }
       </ul>
     </section>
   </section>

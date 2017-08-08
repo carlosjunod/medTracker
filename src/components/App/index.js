@@ -11,7 +11,7 @@ import Admin from '../Admin/'
 // }
 
 const App = ( {
-  medicines,
+  meds,
   getMeds,
   addMed,
   editMed,
@@ -20,8 +20,8 @@ const App = ( {
 }) => (
   <div className="wrapper">
     <Header className="header"/>
-    <MedicneList addMed={addMed}/>
-    <Admin />
+    <MedicneList meds={meds}/>
+    <Admin addMed={addMed}/>
   </div>
 )
 

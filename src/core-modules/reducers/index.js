@@ -1,10 +1,10 @@
 import {combineReducers} from 'redux'
 
 // import all reducers eplClub in example
-import medicines from './medicines'
+import meds from './medicines'
 
 const medsReducers = combineReducers({
-  medicines,
+  meds,
 })
 
 export default medsReducers

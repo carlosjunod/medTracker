@@ -12,9 +12,9 @@ import {
 import App from '../components/App'
 
 const mapStateToProps = (state) => {
-  let medicines = state.medicines.medicinesasd
+  let meds = state.meds
   return {
-    medicines, // current state of my app
+    meds, // current state of my app
   }
 }
 

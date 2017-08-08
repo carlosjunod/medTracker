@@ -4,11 +4,13 @@ export const getMeds = () =>{
   }
 }
 
-export const addMed = (med) =>{
-  console.log('here');
+export const addMed = (name, brand, mg, alarm) =>{
   return {
     type: 'ADD_MED',
-    med,
+    name,
+    brand,
+    mg,
+    alarm,
   }
 }
 
