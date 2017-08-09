@@ -1,14 +1,15 @@
 import React from 'react'
+import Item from '../Item/'
 
-const MedicneList = ({meds}) => (
+const MedicneList = ({meds, delMed, editMed, editModal}) => (
   <section className="medicine-list">
     <section className="medicnes">
       <h2>My medicines</h2>
       <ul>
-        {console.log('HERE MEDICINES 💊->', meds)}
+        {/* {console.log('HERE MEDICINES 💊->', meds)} */}
         {
           meds.map( (med, i) =>
-            <li key={i}> {med.name} </li>
+            <Item key={i} i={i} med={med} delMed={delMed} editMed={editMed} editModal={editModal}> {med.name} </Item>
           )
         }
       </ul>

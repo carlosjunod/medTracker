@@ -14,17 +14,21 @@ export const addMed = (name, brand, mg, alarm) =>{
   }
 }
 
-export const editMed = (med) =>{
+export const editMed = (name, brand, mg, alarm, i) =>{
   return {
     type: 'EDIT_MED',
-    med,
+    i,
+    name,
+    brand,
+    mg,
+    alarm,
   }
 }
 
-export const delMed = (med) =>{
+export const delMed = (id) =>{
   return {
     type: 'DELETE_MED',
-    med,
+    id,
   }
 }
 
@@ -32,5 +36,30 @@ export const setAlarm = (med) =>{
   return {
     type: 'SET_ALARM',
     med,
+  }
+}
+
+export const openModal = () =>{
+  console.log('HEREE MODAL!!!')
+  return {
+    type: 'OPEN_MODAL',
+  }
+}
+
+export const closeModal = () =>{
+  console.log('HEREE MODAL CLOSE!!!')
+  return {
+    type: 'CLOSE_MODAL',
+  }
+}
+
+export const editModal = (name, brand, mg, alarm, i) =>{
+  return {
+    type: 'EDIT_MODAL',
+    i,
+    name,
+    brand,
+    mg,
+    alarm,
   }
 }
