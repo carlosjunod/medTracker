@@ -1,0 +1,40 @@
+#admin{
+  width: 80%;
+  height: 80%;
+  background-color: rgba(0,0,0,.8);
+  padding: 10%;
+  /*position: absolute;*/
+}
+
+form{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+label, input{
+  width: 40%;
+  padding: 10px;
+  margin-bottom: 10px;
+
+}
+
+label{
+  text-align: right;
+}
+
+input{
+  width: 40%;
+  border: none;
+}
+
+button.save-add{
+  width: 80%;
+  margin: 10px auto;
+  padding: 10px;
+  font-size: 1.2em;
+  border: none;
+  background-color: #64CFB8;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 800;
+}

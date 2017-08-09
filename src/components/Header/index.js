@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import './Header.css'
+
 
 class Header extends Component {
   render() {
@@ -6,8 +8,8 @@ class Header extends Component {
 
     return (
       <header className="app-header">
-        <h1> MedTracker </h1>
-        <p>Today you have {this.props.meds.length} medicines to take</p>
+        <h1> Med<span>Tracker</span> </h1>
+        <p>Today you have <span className="to-take">{this.props.meds.length}</span> medicines to take today</p>
       </header>
     )
   }

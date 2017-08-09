@@ -1,0 +1,41 @@
+.item{
+  width: 100%;
+  border-bottom: 1px solid rgba(255,255,255,.1);
+  padding: 10px 0px;
+}
+
+.item > * {
+  width: 20%;
+  display: inline-block;
+}
+.button button{
+  padding: 8px 5px;
+  color: white;
+  border: 1px solid rgba(0,0,0,0);
+  width: 80%;
+  background: none;
+  cursor: pointer;
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  -ms-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+}
+.button.del button{
+  background-color: #4D4C8F;
+}
+
+.button.edit button{
+  background-color: #64CFB8;
+}
+
+
+.button.del:hover button{
+  /*color: #;*/
+  /*background-color: transparent;*/
+  box-shadow: 5px 5px 0px 0px #3C3C70;
+}
+
+.button.edit:hover button{
+  box-shadow: 5px 5px 0px 0px #78F8DC;
+}

@@ -1,5 +1,6 @@
 import React from 'react'
 import Item from '../Item/'
+import './MedicneList.css'
 
 const MedicneList = ({meds, delMed, editMed, editModal}) => (
   <section className="medicine-list">

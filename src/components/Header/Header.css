@@ -1,0 +1,34 @@
+header.app-header{
+  width: 100%;
+  text-align: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid white;
+}
+
+h1{
+  margin-bottom: 10px;
+  font-weight: 800;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+h1 span{
+  font-weight: 100;
+}
+
+p{
+  background-color: white;
+  border-radius: 30px;
+  width: 50%;
+  padding: 10px;
+  color: #50769B;
+  margin: 0px auto;
+}
+
+p .to-take{
+  background-color: #55C7B2;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-weight: bold;
+}
